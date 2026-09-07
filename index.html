@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aztec Robotics FTC #31174 from Mendota High School - elite competitive robotics and engineering."
+    />
+    <title>Aztec Robotics | FTC #31174</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Orbitron:wght@400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro" id="intro" aria-hidden="true">
+      <div class="intro-scanline"></div>
+      <div class="intro-mark">
+        <span class="intro-kicker">FIRST TECH CHALLENGE / 2025</span>
+        <span class="intro-number">FTC #31174</span>
+        <h1>AZTEC<br />ROBOTICS</h1>
+        <span class="intro-location">MENDOTA, CALIFORNIA</span>
+        <p class="intro-story">FROM A RURAL COMMUNITY<br />BUILDING WHAT COMES NEXT</p>
+      </div>
+      <div class="intro-image">
+        <img src="assets/images/ace-cad.png" alt="CAD render of robot ACE" />
+      </div>
+      <div class="intro-progress"><span></span></div>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true">
+      <span class="cursor-dot"></span>
+      <span class="cursor-ring"></span>
+      <span class="cursor-label">OPEN</span>
+    </div>
+
+    <header class="site-header" id="top">
+      <a href="#top" class="brand" data-cursor="OPEN">
+        <span class="brand-kicker">FTC #31174</span>
+        <span class="brand-main">Aztec Robotics</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#about" data-cursor="OPEN">About</a>
+        <a href="#robot" data-cursor="OPEN">Robot</a>
+        <a href="#achievements" data-cursor="OPEN">Achievements</a>
+        <a href="#team" data-cursor="OPEN">Team</a>
+        <a href="#media" data-cursor="OPEN">Media</a>
+      </nav>
+      <a class="header-contact" href="#contact" data-cursor="OPEN">Contact <span>↗</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#robot">Robot</a>
+      <a href="#build-process">Build Process</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#media">Media</a>
+      <a href="#socials">Socials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="hero section-frame" id="hero">
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+        <div class="particle-stage" id="particleStage">
+          <img class="robot-schematic" src="assets/images/ace-cad.png" alt="CAD render of robot ACE" />
+          <canvas id="robotParticles" aria-label="Interactive particle rendering of robot ACE"></canvas>
+          <div class="mechanism-hud" id="mechanismHud" aria-live="polite">
+            <span class="hud-kicker">ACE / 2025 PLATFORM</span>
+            <strong class="hud-name">HOVER A DETAIL</strong>
+            <span class="hud-detail">Explore the documented CAD decisions.</span>
+          </div>
+          <div class="mechanism-tags" aria-hidden="true">
+            <span data-mechanism="PULLEY SYSTEM" data-detail="20-tooth 1:1 pulley system powered by two 6000 RPM motors for maximum velocity." style="--x: 33%; --y: 27%">PULLEY SYSTEM</span>
+            <span data-mechanism="CURVED RACK" data-detail="Custom curved rack with a 50-tooth pinion for a wider firing range and accurate hood motion." style="--x: 76%; --y: 24%">CURVED RACK</span>
+            <span data-mechanism="TORQUE SERVO" data-detail="Torque Servo 2000 dual-mode servo used as a gate for artifact transfer to the flywheel." style="--x: 79%; --y: 49%">TORQUE SERVO</span>
+            <span data-mechanism="HOGBACK WHEELS" data-detail="Three GoBILDA Hogback traction wheels increase inertia and surface contact for the shooter." style="--x: 68%; --y: 68%">HOGBACK WHEELS</span>
+            <span data-mechanism="LIMELIGHT 3A" data-detail="Mounted on the custom holster for accurate AprilTag detection and localization." style="--x: 18%; --y: 54%">LIMELIGHT 3A</span>
+            <span data-mechanism="HINGED INTAKE" data-detail="Compliant hinged intake designed to improve artifact transfer from ground to cycle intake." style="--x: 24%; --y: 76%">HINGED INTAKE</span>
+            <span data-mechanism="10-TOOTH PINION" data-detail="Custom 10-tooth pinion used across all three intake stages for a 1:1 GoBILDA motor relationship." style="--x: 47%; --y: 77%">10-TOOTH PINION</span>
+            <span data-mechanism="PETG-CF BARRICADE" data-detail="PETG-CF 3-D printed barricade around the mecanum wheel for mass distribution and defensive leverage." style="--x: 83%; --y: 82%">PETG-CF BARRICADE</span>
+          </div>
+        </div>
+        <div class="hero-content container">
+          <p class="hero-kicker reveal-up">Mendota High School</p>
+          <h1 class="hero-title reveal-up" data-split>
+            AZTEC<br />ROBOTICS
+          </h1>
+          <p class="hero-subtitle reveal-up">FTC #31174 / BUILD. PROGRAM. COMPETE.</p>
+          <div class="hero-actions reveal-up">
+            <a href="#team" class="btn btn-primary" data-cursor="OPEN">Meet the Team</a>
+            <a href="#robot" class="btn btn-ghost" data-cursor="OPEN">See Our Robot</a>
+          </div>
+        </div>
+        <figure class="hero-media reveal-clip">
+          <img
+            src="assets/images/norcal-inspection.jpg"
+            alt="Aztec Robotics team and robot"
+            data-fallback="hero"
+          />
+        </figure>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+          <span>Scroll</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="about section-frame" id="about">
+        <div class="container">
+          <p class="section-label reveal-up">About</p>
+          <h2 class="statement reveal-up" data-about-statement>WE DON'T JUST BUILD ROBOTS. WE BUILD WHAT'S NEXT.</h2>
+          <p class="about-copy reveal-up" id="aboutDescription"></p>
+        </div>
+      </section>
+
+      <section class="stats section-frame" id="stats">
+        <div class="container">
+          <p class="section-label reveal-up">Verified Numbers</p>
+          <div class="stats-grid" id="statsGrid"></div>
+        </div>
+      </section>
+
+      <section class="robot section-frame" id="robot">
+        <div class="container robot-layout">
+          <div class="robot-media reveal-clip">
+            <figure class="engineering-figure engineering-figure-top">
+              <img
+                src="assets/images/cad-whiteboard.jpg"
+                alt="Team CAD and mechanism notes on a whiteboard"
+                class="engineering-board"
+              />
+              <figcaption>Autonomous strategy notes</figcaption>
+            </figure>
+            <figure class="engineering-figure engineering-figure-cad">
+              <img
+                src="assets/images/ace-cad.png"
+                alt="Aztec Robotics competition robot"
+                data-fallback="robot"
+              />
+              <figcaption>DECODE 2025 Full CAD</figcaption>
+            </figure>
+            <figure class="engineering-figure engineering-figure-bottom">
+              <img
+                src="assets/images/auto-whiteboard.jpg"
+                alt="Team autonomous strategy and robot design notes on a whiteboard"
+                class="engineering-board"
+              />
+              <figcaption>CAD + mechanism notes</figcaption>
+            </figure>
+          </div>
+          <div class="robot-content">
+            <p class="section-label reveal-up">Robot</p>
+            <h2 class="reveal-up">ACE Robot Engineering</h2>
+            <p class="reveal-up" id="robotDescription"></p>
+            <div class="tech-grid" id="robotSpecs"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="build-process section-frame" id="build-process">
+        <div class="container">
+          <p class="section-label reveal-up">Build Process</p>
+          <h2 class="reveal-up">From Concept To Competition</h2>
+          <div class="process-track" id="processTrack"></div>
+        </div>
+      </section>
+
+      <section class="achievements section-frame" id="achievements">
+        <div class="container">
+          <p class="section-label reveal-up">Achievements</p>
+          <h2 class="reveal-up">Awards and Achievements</h2>
+          <div class="achievement-timeline" id="achievementsTimeline"></div>
+        </div>
+      </section>
+
+      <section class="projects section-frame" id="projects">
+        <div class="container">
+          <p class="section-label reveal-up">Projects</p>
+          <h2 class="reveal-up">Engineering Portfolio</h2>
+          <div class="project-grid" id="projectGrid"></div>
+        </div>
+      </section>
+
+      <section class="team section-frame" id="team">
+        <div class="container">
+          <p class="section-label reveal-up">Team</p>
+          <h2 class="reveal-up">People Behind The Build</h2>
+          <div class="team-grid" id="teamGrid"></div>
+        </div>
+      </section>
+
+      <section class="media section-frame" id="media">
+        <div class="container">
+          <p class="section-label reveal-up">Media</p>
+          <h2 class="reveal-up">Photo + Video Gallery</h2>
+          <div class="media-grid" id="mediaGrid"></div>
+        </div>
+      </section>
+
+      <section class="socials section-frame" id="socials">
+        <div class="container socials-layout">
+          <div class="social-card reveal-up" id="instagramCard"></div>
+          <div class="social-card reveal-up" id="youtubeCard"></div>
+        </div>
+      </section>
+
+      <section class="contact section-frame" id="contact">
+        <div class="container contact-box reveal-clip">
+          <p class="section-label">Contact</p>
+          <h2>LET'S BUILD SOMETHING TOGETHER.</h2>
+          <div class="contact-links" id="contactLinks"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Aztec Robotics</p>
+      <p>FTC #31174</p>
+      <p>Mendota High School</p>
+      <p>Mendota, California</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close fullscreen image">Close</button>
+      <img id="lightboxImage" alt="Fullscreen media" />
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
